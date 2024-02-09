@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/istockphoto-1350788409-170667a.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gif-container {
+    height: 40vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.gif {
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    padding: 0;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-top: 5%;
+    padding: 0%;
+}
+
+h1 {
+    background: none;
+}
+
+.botones {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    /* height: 200px; */
+}
+
+.botones button {
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 11px;
+    border-radius: 20px;
+}
+
+.Si{
+    background-color: #72a300;
+    border-color: #72a300;
+    width: 130px;
+}
+
+.No{
+    background-color: #C71A1A;
+    border-color: #C71A1A;
+    width: 130px;
+}
+
+.contenedor-mensaje{
+    padding: 0;
+    margin: 0;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.giff{
+    margin-top: 30px;
+}
+
+.giff img{
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.corazon {
+    position: absolute;
+    width: 50px; /* Ajusta el tamaño según tu imagen */
+    height: 50px; /* Ajusta el tamaño según tu imagen */
+    background-image: url('img/corazon.png');
+    background-size: contain;
+    animation: heartbeat 5s linear forwards; /* Ajusta la duración según sea necesario */
+    opacity: 0; /* Inicia transparente */
+}
+
+@keyframes parpadeo {
+    0% { color: black; }
+    50% { color: red; }
+    100% { color: black; }
+}
+
+#parpadeo {
+    animation: parpadeo 1s infinite;
+}
